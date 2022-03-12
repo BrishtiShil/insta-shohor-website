@@ -12,13 +12,13 @@ const getReportedPosts = () => {
 };
 
 const isLiked = (id) => {
-  return likedPostsId?.length && !!likedPostsId.includes(posts.id);
+  return likedPostsId?.length && !!likedPostsId.includes(id);
 };
 
 const addToLiked = (id) => {
   likedPostsId.push(id);
   console.log(likedPostsId);
-  // showPosts(posts);
+  showPosts(posts);
 };
 
 const reportPost = (id) => {
